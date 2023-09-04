@@ -34,7 +34,7 @@ app.get("/api/:date", (req, res) => {
 
     res.json({ unix: timestamp, utc: utcDateString })
   } else {
-    res.status(400).json({ error: "Invalid input format" })
+    res.status(400).json({ error: "Invalid date" })
   }
 })
 
